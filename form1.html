@@ -1,13 +1,18 @@
 <!doctype html>
 <html>
   <head>
-    <title>Choose a place would you like to learn about form</title>
+    <style>
+     html{font-family:Georgia;color:#333;}
+     body{background:rgba(255, 127, 71, 0.7);margin:0;}
+    <title>Give us your feedback!</title>
+    </style>
   </head>
+  
   <body>
     <form action="/action_page.php" method="get" target="_blank">
     <div align= "center">
-      <h1>Best Spots to Visit!</h1>
-      Select a place to learn about:
+      <h1>Give us your feedback!</h1>
+      Select the place that you want to visit:
       <select name="location"><option>
         <option value=1 selected="true">The Ocean Course</option>
         <option value=2>Pineapple Fountain</option>
@@ -16,6 +21,11 @@
        <option value=2>Freshfields Village</option>
       </option></select>
         <br><br>
+           Was this site helpful?
+      <input type="radio" name="exe" value=1>Yes
+      <input type = "radio" name="exe" value=0>No<br><br>
+         Do you have any additional questions about these places?
+      <textarea name="Comments" cols=30 rows=4></textarea><br><br>
         <input type="submit" value="Submit Form">
         </div>
         </form>
